@@ -61,7 +61,6 @@ def parse_afishagoroda() -> list[dict[str, Any]]:
     results: list[dict[str, Any]] = []
     seen_titles: set[str] = set()
 
-    # Универсальный поиск карточек событий по ссылкам на /events/
     for link in soup.select("a[href*='/events/']"):
         title = " ".join(link.get_text(" ", strip=True).split())
         href = link.get("href", "")
@@ -82,6 +81,9 @@ def parse_afishagoroda() -> list[dict[str, Any]]:
             "rating": "",
             "price": "Билеты на сайте",
             "url": full_url,
+            "events": [
+                {"title": title, "info": "Актуальное событие из городской афиши Пскова"}
+            ],
         })
         if len(results) >= 12:
             break
@@ -115,6 +117,9 @@ def parse_gostandup() -> list[dict[str, Any]]:
             "rating": "",
             "price": "По билетам",
             "url": urljoin(base_url, link.get("href", "")),
+            "events": [
+                {"title": title, "info": "Стендап-шоу в Пскове"}
+            ],
         })
         if len(results) >= 6:
             break
@@ -155,6 +160,9 @@ def parse_ticpskov_masterclasses() -> list[dict[str, Any]]:
             "rating": "",
             "price": "По записи",
             "url": urljoin(base_url, href),
+            "events": [
+                {"title": title, "info": "Творческий мастер-класс в Пскове"}
+            ],
         })
         if len(results) >= 6:
             break
@@ -177,7 +185,6 @@ def main() -> None:
     scraped.extend(parse_gostandup())
     scraped.extend(parse_ticpskov_masterclasses())
 
-    # Объединяем без дубликатов по названию
     combined: list[dict[str, Any]] = list(curated)
     existing_names = {item["name"].strip().lower() for item in combined}
 

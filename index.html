@@ -82,7 +82,7 @@
         <button type="button" class="btn-back" id="backToStep1">← Назад</button>
         <div>
           <h2 class="section-title">Выбери, куда хочется</h2>
-          <p class="section-subtitle">Можно отметить сразу несколько вариантов — будет запасной план</p>
+          <p class="section-subtitle">Нажми на карточку, чтобы посмотреть афишу и выбрать удобную дату</p>
         </div>
       </div>
 
@@ -170,6 +170,48 @@
         <span class="floating-hint">Можно идти дальше даже без выбора</span>
       </div>
       <button type="button" class="btn-primary" id="btnGoToStep3">Дальше →</button>
+    </div>
+  </div>
+
+  <!-- Интерактивное окно заведения: мероприятия и выбор даты -->
+  <div class="modal-backdrop" id="placeModal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть окно">×</button>
+
+      <div class="modal-header">
+        <span class="place-badge" id="modalBadge">Категория</span>
+        <h2 class="modal-title" id="modalTitle">Название заведения</h2>
+        <p class="modal-meta" id="modalMeta"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+
+      <div class="modal-section">
+        <h3 class="modal-subtitle">Что здесь есть / афиша</h3>
+        <div class="modal-events" id="modalEvents"></div>
+      </div>
+
+      <div class="modal-section">
+        <h3 class="modal-subtitle">Выбери удобную дату</h3>
+        <div class="modal-date-chips" id="modalDateChips">
+          <button type="button" class="time-chip is-active" data-modal-date="Сегодня">Сегодня</button>
+          <button type="button" class="time-chip" data-modal-date="Завтра">Завтра</button>
+          <button type="button" class="time-chip" data-modal-date="В пятницу">В пятницу</button>
+          <button type="button" class="time-chip" data-modal-date="В субботу">В субботу</button>
+          <button type="button" class="time-chip" data-modal-date="В воскресенье">В воскресенье</button>
+        </div>
+        <div class="modal-date-picker-row">
+          <label class="modal-date-label" for="modalDateInput">Или выбери на календаре:</label>
+          <input type="date" class="text-input modal-date-input" id="modalDateInput" />
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a class="place-link" id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer">Сайт / карта ↗</a>
+        <div class="modal-footer-actions">
+          <button type="button" class="btn-secondary" id="modalRemoveBtn" hidden>Убрать из выбора</button>
+          <button type="button" class="btn-primary" id="modalConfirmBtn">Выбрать это место ♥</button>
+        </div>
+      </div>
     </div>
   </div>
 

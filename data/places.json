@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "19.11.2026 16:56 МСК",
+  "updated_at": "19.11.2026 17:27 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -11,7 +11,17 @@
       "address": "ул. Максима Горького, 6А, Псков",
       "rating": "4.7",
       "price": "Средний чек",
-      "url": "https://yandex.ru/maps/discovery/podborka_restoran_pskov-25/"
+      "url": "https://yandex.ru/maps/discovery/podborka_restoran_pskov-25/",
+      "events": [
+        {
+          "title": "Романтический ужин при свечах",
+          "info": "Бронь уютного столика в тематическом зале"
+        },
+        {
+          "title": "Дегустация авторских блюд и напитков",
+          "info": "Ежедневно с 12:00 до 00:00 (Пт-Сб до 01:00)"
+        }
+      ]
     },
     {
       "id": "food-trapeznye",
@@ -22,7 +32,17 @@
       "address": "Музейный переулок, Псков",
       "rating": "4.6",
       "price": "Средний чек",
-      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/",
+      "events": [
+        {
+          "title": "Ужин после прогулки у Кремля",
+          "info": "Ежедневно 12:00 – 00:00"
+        },
+        {
+          "title": "Традиционная русская кухня",
+          "info": "Историческая атмосфера в центре"
+        }
+      ]
     },
     {
       "id": "food-mojo",
@@ -33,7 +53,17 @@
       "address": "ул. Кремль, 7а, Псков",
       "rating": "4.5",
       "price": "Средний чек",
-      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/",
+      "events": [
+        {
+          "title": "Вечерние коктейли и ужин",
+          "info": "Вс-Чт до 00:00, Пт-Сб до 02:00"
+        },
+        {
+          "title": "Поздний вечер вдвоём",
+          "info": "Стильный зал рядом с набережной"
+        }
+      ]
     },
     {
       "id": "food-leven",
@@ -44,7 +74,13 @@
       "address": "Милицейская ул., 4, Псков",
       "rating": "4.6",
       "price": "Средний чек",
-      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/",
+      "events": [
+        {
+          "title": "Спокойный ужин вдвоём",
+          "info": "Вс-Чт до 23:00, Пт-Сб до 00:00"
+        }
+      ]
     },
     {
       "id": "food-mamaroma",
@@ -55,7 +91,17 @@
       "address": "Октябрьский просп., 10А, Псков",
       "rating": "4.3",
       "price": "Средний чек",
-      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/"
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/",
+      "events": [
+        {
+          "title": "Итальянский ужин (паста и пицца)",
+          "info": "Ежедневно с 11:00"
+        },
+        {
+          "title": "Тирамису и кофе вдвоём",
+          "info": "Уютный столик у окна"
+        }
+      ]
     },
     {
       "id": "food-rublev",
@@ -66,7 +112,13 @@
       "address": "Верхне-Береговая ул., 4, Псков",
       "rating": "4.6",
       "price": "Средний чек",
-      "url": "https://www.pskovmir.ru/kafe.html"
+      "url": "https://www.pskovmir.ru/kafe.html",
+      "events": [
+        {
+          "title": "Ужин в доме XVII века",
+          "info": "Ежедневно 12:00 – 23:00"
+        }
+      ]
     },
     {
       "id": "food-moyaistoriya",
@@ -77,7 +129,17 @@
       "address": "ул. Кузнецкая, 2, Псков",
       "rating": "4.5",
       "price": "Доступный чек",
-      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/",
+      "events": [
+        {
+          "title": "Завтрак или бранч",
+          "info": "С 08:30 в будни, с 09:30 в выходные"
+        },
+        {
+          "title": "Кофе и ужин",
+          "info": "Работает до 23:00 / 00:00"
+        }
+      ]
     },
     {
       "id": "food-lakomka",
@@ -88,7 +150,13 @@
       "address": "Октябрьский просп., 22, Псков",
       "rating": "4.4",
       "price": "Кофе и десерты",
-      "url": "https://www.pskovmir.ru/kafe.html"
+      "url": "https://www.pskovmir.ru/kafe.html",
+      "events": [
+        {
+          "title": "Кофе и свежая выпечка с собой",
+          "info": "Ежедневно 08:00 – 21:00"
+        }
+      ]
     },
     {
       "id": "fun-mirage",
@@ -99,7 +167,33 @@
       "address": "ул. Кузбасской Дивизии, 19 (ТРК «Акваполис»)",
       "rating": "4.7",
       "price": "По афише сеансов",
-      "url": "https://www.mirage.ru/psk/schedule/"
+      "url": "https://www.mirage.ru/psk/schedule/",
+      "events": [
+        {
+          "title": "Дедмобиль (12+)",
+          "info": "Комедия, семейный · сеансы каждый день"
+        },
+        {
+          "title": "Рокки – это я (18+)",
+          "info": "Драма, биография"
+        },
+        {
+          "title": "Скрудж (16+)",
+          "info": "Комедия, драма, фэнтези"
+        },
+        {
+          "title": "Рождение империи (12+)",
+          "info": "Драма, история"
+        },
+        {
+          "title": "Битва моторов (12+)",
+          "info": "Приключения, драма"
+        },
+        {
+          "title": "Выберем фильм вместе на месте",
+          "info": "Актуальное расписание на mirage.ru"
+        }
+      ]
     },
     {
       "id": "fun-smena",
@@ -110,7 +204,17 @@
       "address": "Октябрьский просп., 17А, Псков",
       "rating": "4.5",
       "price": "По афише сеансов",
-      "url": "https://afisha.yandex.ru/pskov/cinema/places/smena-pskov"
+      "url": "https://afisha.yandex.ru/pskov/cinema/places/smena-pskov",
+      "events": [
+        {
+          "title": "Вечерний киносеанс в центре",
+          "info": "Новинки проката каждый день"
+        },
+        {
+          "title": "Кино + прогулка по Октябрьскому проспекту",
+          "info": "Удобное расположение в центре"
+        }
+      ]
     },
     {
       "id": "fun-poligon60",
@@ -121,7 +225,17 @@
       "address": "ул. Яна Райниса, 57 / ул. Леона Поземского, 110Е, Псков",
       "rating": "4.8",
       "price": "от 1 300 ₽",
-      "url": "https://laser-battle.ru/laser-clubs/poligon-60/"
+      "url": "https://laser-battle.ru/laser-clubs/poligon-60/",
+      "events": [
+        {
+          "title": "Неоновый лазертаг на 2-этажной арене",
+          "info": "Более 30 сценариев, дым-машины и лазерное шоу"
+        },
+        {
+          "title": "Квест с актёрами",
+          "info": "Интерактивная игра по предварительной записи"
+        }
+      ]
     },
     {
       "id": "fun-proryv",
@@ -132,7 +246,17 @@
       "address": "Текстильная ул., 3, Псков",
       "rating": "4.5",
       "price": "По записи",
-      "url": "https://laser-battle.ru/laser-clubs/proriv/"
+      "url": "https://laser-battle.ru/laser-clubs/proriv/",
+      "events": [
+        {
+          "title": "Командный лазертаг в крытой арене",
+          "info": "Тёплая площадка 500 м²"
+        },
+        {
+          "title": "Тематические экшн-квесты",
+          "info": "Сюжетные сценарии (Гарри Поттер, Хоррор и др.)"
+        }
+      ]
     },
     {
       "id": "fun-zagagame",
@@ -143,7 +267,17 @@
       "address": "Псков (уточняется при записи)",
       "rating": "",
       "price": "По сеансам",
-      "url": "https://pskov.zaga-game.ru/"
+      "url": "https://pskov.zaga-game.ru/",
+      "events": [
+        {
+          "title": "Совместная VR-игра на арене",
+          "info": "Свободное перемещение без проводов"
+        },
+        {
+          "title": "Командный шутер или приключение",
+          "info": "Сеансы по записи"
+        }
+      ]
     },
     {
       "id": "fun-questnerv",
@@ -154,7 +288,13 @@
       "address": "Красноармейская ул., 26Б, Псков",
       "rating": "5.0",
       "price": "По бронированию",
-      "url": "https://yandex.ru/maps/discovery/podborka_kvesty_pskov-25/"
+      "url": "https://yandex.ru/maps/discovery/podborka_kvesty_pskov-25/",
+      "events": [
+        {
+          "title": "Прохождение квеста вдвоём",
+          "info": "Ежедневно с 10:00 до 23:00"
+        }
+      ]
     },
     {
       "id": "event-philharmony",
@@ -165,7 +305,21 @@
       "address": "ул. Некрасова, 24, Псков",
       "rating": "4.6",
       "price": "Билеты онлайн",
-      "url": "https://philpskov.ru/events"
+      "url": "https://philpskov.ru/events",
+      "events": [
+        {
+          "title": "Стендап-концерт в БКЗ Филармонии",
+          "info": "21 ноября, 19:00 · 1 600 – 4 400 ₽"
+        },
+        {
+          "title": "Концерт «Сказ о Великой и Пскове»",
+          "info": "22 ноября, 14:00 · ансамбль русской музыки «Псков»"
+        },
+        {
+          "title": "Выбрать другой концерт из афиши",
+          "info": "Актуальное расписание на philpskov.ru"
+        }
+      ]
     },
     {
       "id": "event-standup",
@@ -176,7 +330,17 @@
       "address": "Разные площадки Пскова",
       "rating": "",
       "price": "Афиша GoStandup",
-      "url": "https://gostandup.ru/pskov/events"
+      "url": "https://gostandup.ru/pskov/events",
+      "events": [
+        {
+          "title": "Концерт псковских стендап-комиков",
+          "info": "20 ноября, 20:00 · Blgkv Bar"
+        },
+        {
+          "title": "Открытый микрофон / ближайший стендап",
+          "info": "Актуальная афиша на gostandup.ru"
+        }
+      ]
     },
     {
       "id": "event-masterclass",
@@ -187,7 +351,17 @@
       "address": "Псков (площадки ТИЦ)",
       "rating": "",
       "price": "По расписанию",
-      "url": "https://ticpskov.ru/events/master-klass/"
+      "url": "https://ticpskov.ru/events/master-klass/",
+      "events": [
+        {
+          "title": "Творческий мастер-класс в Доме Беклешова",
+          "info": "Актуальное расписание на ticpskov.ru"
+        },
+        {
+          "title": "Совместный мастер-класс для двоих",
+          "info": "Запись на ближайшие даты"
+        }
+      ]
     },
     {
       "id": "event-afishagoroda",
@@ -198,7 +372,17 @@
       "address": "Псков",
       "rating": "",
       "price": "От 500 ₽",
-      "url": "https://pskov.afishagoroda.ru/events"
+      "url": "https://pskov.afishagoroda.ru/events",
+      "events": [
+        {
+          "title": "Концертная программа «Пара пародистов» (Дом Офицеров)",
+          "info": "10 декабря, 19:00 · 1 000 – 2 500 ₽"
+        },
+        {
+          "title": "Спектакль или концерт по общей афише",
+          "info": "Выбор билетов на pskov.afishagoroda.ru"
+        }
+      ]
     }
   ]
 }
