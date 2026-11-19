@@ -1,0 +1,204 @@
+{
+  "city": "Псков",
+  "updated_at": "19.11.2026 16:56 МСК",
+  "items": [
+    {
+      "id": "food-helga",
+      "category": "food",
+      "subcategory": "Ресторан",
+      "name": "Ресторан «Helga»",
+      "description": "Атмосферный ресторан в стиле средневекового замка с тематическими залами и фресками.",
+      "address": "ул. Максима Горького, 6А, Псков",
+      "rating": "4.7",
+      "price": "Средний чек",
+      "url": "https://yandex.ru/maps/discovery/podborka_restoran_pskov-25/"
+    },
+    {
+      "id": "food-trapeznye",
+      "category": "food",
+      "subcategory": "Русская кухня",
+      "name": "Трапезные палаты",
+      "description": "Уютный ресторан с историческим интерьером недалеко от Кремля.",
+      "address": "Музейный переулок, Псков",
+      "rating": "4.6",
+      "price": "Средний чек",
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+    },
+    {
+      "id": "food-mojo",
+      "category": "food",
+      "subcategory": "Гастробар",
+      "name": "Mojo gastrobar",
+      "description": "Современный гастробар в самом центре у Псковского Кремля, работает до ночи по выходным.",
+      "address": "ул. Кремль, 7а, Псков",
+      "rating": "4.5",
+      "price": "Средний чек",
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+    },
+    {
+      "id": "food-leven",
+      "category": "food",
+      "subcategory": "Ресторан-бистро",
+      "name": "Ресторан-бистро «Лёвенъ»",
+      "description": "Спокойное бистро в центре города для уютного ужина вдвоём.",
+      "address": "Милицейская ул., 4, Псков",
+      "rating": "4.6",
+      "price": "Средний чек",
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+    },
+    {
+      "id": "food-mamaroma",
+      "category": "food",
+      "subcategory": "Итальянская кухня",
+      "name": "Ресторан Mama Roma",
+      "description": "Классическая итальянская кухня: паста, пицца и десерты в тёплой обстановке.",
+      "address": "Октябрьский просп., 10А, Псков",
+      "rating": "4.3",
+      "price": "Средний чек",
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/"
+    },
+    {
+      "id": "food-rublev",
+      "category": "food",
+      "subcategory": "Ресторан-бар",
+      "name": "Ресторан-бар «Рублев»",
+      "description": "Купеческий дом XVII века на берегу, блюда русской кухни в глиняной посуде.",
+      "address": "Верхне-Береговая ул., 4, Псков",
+      "rating": "4.6",
+      "price": "Средний чек",
+      "url": "https://www.pskovmir.ru/kafe.html"
+    },
+    {
+      "id": "food-moyaistoriya",
+      "category": "food",
+      "subcategory": "Кафе-ресторан",
+      "name": "Моя История",
+      "description": "Приятное место для завтрака, кофе или вечернего ужина в центре.",
+      "address": "ул. Кузнецкая, 2, Псков",
+      "rating": "4.5",
+      "price": "Доступный чек",
+      "url": "https://yandex.ru/maps/25/pskov/category/restaurant/184106394/filter/best_rating/"
+    },
+    {
+      "id": "food-lakomka",
+      "category": "food",
+      "subcategory": "Кондитерская",
+      "name": "Лакомка",
+      "description": "Легендарная псковская кондитерская — зайти за десертами и кофе перед прогулкой.",
+      "address": "Октябрьский просп., 22, Псков",
+      "rating": "4.4",
+      "price": "Кофе и десерты",
+      "url": "https://www.pskovmir.ru/kafe.html"
+    },
+    {
+      "id": "fun-mirage",
+      "category": "entertainment",
+      "subcategory": "Кинотеатр",
+      "name": "Мираж Синема (Акваполис)",
+      "description": "Современные кинозалы с комфортными креслами, актуальные премьеры каждый день.",
+      "address": "ул. Кузбасской Дивизии, 19 (ТРК «Акваполис»)",
+      "rating": "4.7",
+      "price": "По афише сеансов",
+      "url": "https://www.mirage.ru/psk/schedule/"
+    },
+    {
+      "id": "fun-smena",
+      "category": "entertainment",
+      "subcategory": "Кинотеатр",
+      "name": "Кинотеатр «Смена»",
+      "description": "Кино в самом центре Пскова на Октябрьском проспекте — удобно совместить с прогулкой.",
+      "address": "Октябрьский просп., 17А, Псков",
+      "rating": "4.5",
+      "price": "По афише сеансов",
+      "url": "https://afisha.yandex.ru/pskov/cinema/places/smena-pskov"
+    },
+    {
+      "id": "fun-poligon60",
+      "category": "entertainment",
+      "subcategory": "Лазертаг",
+      "name": "Лазертаг-клуб «Полигон-60»",
+      "description": "Двухэтажная неоновая арена с дым-машинами, лазерным шоу и разными сценариями игры.",
+      "address": "ул. Яна Райниса, 57 / ул. Леона Поземского, 110Е, Псков",
+      "rating": "4.8",
+      "price": "от 1 300 ₽",
+      "url": "https://laser-battle.ru/laser-clubs/poligon-60/"
+    },
+    {
+      "id": "fun-proryv",
+      "category": "entertainment",
+      "subcategory": "Лазертаг",
+      "name": "Лазертаг-арена «Прорыв»",
+      "description": "Крытая тёплая арена 500 м² с командными играми и тематическими квестами.",
+      "address": "Текстильная ул., 3, Псков",
+      "rating": "4.5",
+      "price": "По записи",
+      "url": "https://laser-battle.ru/laser-clubs/proriv/"
+    },
+    {
+      "id": "fun-zagagame",
+      "category": "entertainment",
+      "subcategory": "VR-арена",
+      "name": "ZAGA-GAME (виртуальная реальность)",
+      "description": "Арена виртуальной реальности со свободным перемещением — можно поиграть в паре.",
+      "address": "Псков (уточняется при записи)",
+      "rating": "",
+      "price": "По сеансам",
+      "url": "https://pskov.zaga-game.ru/"
+    },
+    {
+      "id": "fun-questnerv",
+      "category": "entertainment",
+      "subcategory": "Квесты",
+      "name": "Квесты «QuestNerv»",
+      "description": "Сюжетные квест-комнаты для ярких эмоций и совместного прохождения загадок.",
+      "address": "Красноармейская ул., 26Б, Псков",
+      "rating": "5.0",
+      "price": "По бронированию",
+      "url": "https://yandex.ru/maps/discovery/podborka_kvesty_pskov-25/"
+    },
+    {
+      "id": "event-philharmony",
+      "category": "events",
+      "subcategory": "Концерты",
+      "name": "Псковская филармония (БКЗ)",
+      "description": "Живая музыка, симфонические и эстрадные концерты в главном зале города.",
+      "address": "ул. Некрасова, 24, Псков",
+      "rating": "4.6",
+      "price": "Билеты онлайн",
+      "url": "https://philpskov.ru/events"
+    },
+    {
+      "id": "event-standup",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Стендап-вечера в Пскове",
+      "description": "Концерты приезжих и местных комиков, открытые микрофоны в барах города.",
+      "address": "Разные площадки Пскова",
+      "rating": "",
+      "price": "Афиша GoStandup",
+      "url": "https://gostandup.ru/pskov/events"
+    },
+    {
+      "id": "event-masterclass",
+      "category": "events",
+      "subcategory": "Мастер-классы",
+      "name": "Мастер-классы (Центр туризма и творчества)",
+      "description": "Творческие мастер-классы, ремёсла и городские события в Доме Беклешова и центре.",
+      "address": "Псков (площадки ТИЦ)",
+      "rating": "",
+      "price": "По расписанию",
+      "url": "https://ticpskov.ru/events/master-klass/"
+    },
+    {
+      "id": "event-afishagoroda",
+      "category": "events",
+      "subcategory": "Концерты и театр",
+      "name": "Афиша концертов и спектаклей Пскова",
+      "description": "Актуальное расписание концертов, шоу и спектаклей на ближайшие недели.",
+      "address": "Псков",
+      "rating": "",
+      "price": "От 500 ₽",
+      "url": "https://pskov.afishagoroda.ru/events"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="warm">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Наш вечер в Пскове</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-heart" aria-hidden="true">♥</span>
+        <span class="brand-title" id="brandTitle">Наш вечер в Пскове</span>
+      </div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Переключить тему оформления">
+        <span class="theme-icon" id="themeIcon">🌙</span>
+        <span class="theme-label" id="themeLabel">Вечерняя</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Прогресс-бар -->
+    <nav class="steps-bar" aria-label="Шаги выбора">
+      <button type="button" class="step-pill is-active" data-step-nav="1">1. Настроение</button>
+      <span class="step-arrow">→</span>
+      <button type="button" class="step-pill" data-step-nav="2">2. Места</button>
+      <span class="step-arrow">→</span>
+      <button type="button" class="step-pill" data-step-nav="3">3. Пожелания</button>
+    </nav>
+
+    <!-- ШАГ 1: Настроение -->
+    <section class="screen is-active" id="screen-1">
+      <div class="hero-card">
+        <p class="hero-eyebrow">Приглашение на свидание</p>
+        <h1 class="hero-title" id="heroGreeting">Давай придумаем, куда сходим</h1>
+        <p class="hero-subtitle">Выбери то, что хочется именно сегодня — не нужно ничего искать самой, я всё организую.</p>
+      </div>
+
+      <div class="mood-grid">
+        <button type="button" class="mood-card" data-category="food">
+          <span class="mood-emoji">🍷</span>
+          <span class="mood-name">Вкусно поесть</span>
+          <span class="mood-desc">Уютные рестораны, кафе и гастробары Пскова</span>
+        </button>
+
+        <button type="button" class="mood-card" data-category="entertainment">
+          <span class="mood-emoji">🎯</span>
+          <span class="mood-name">Активный отдых и кино</span>
+          <span class="mood-desc">Лазертаг, квесты, VR-арена и кинотеатры</span>
+        </button>
+
+        <button type="button" class="mood-card" data-category="events">
+          <span class="mood-emoji">🎭</span>
+          <span class="mood-name">События и концерты</span>
+          <span class="mood-desc">Стендап, филармония, спектакли и мастер-классы</span>
+        </button>
+
+        <button type="button" class="mood-card" data-category="all">
+          <span class="mood-emoji">✨</span>
+          <span class="mood-name">Всего понемногу</span>
+          <span class="mood-desc">Посмотреть все варианты и собрать свой вечер</span>
+        </button>
+      </div>
+
+      <div class="surprise-box">
+        <button type="button" class="btn-surprise" id="btnSurprise">
+          <span>🎲</span> Удиви меня — подбери идею случайно!
+        </button>
+      </div>
+    </section>
+
+    <!-- ШАГ 2: Выбор мест -->
+    <section class="screen" id="screen-2">
+      <div class="section-head">
+        <button type="button" class="btn-back" id="backToStep1">← Назад</button>
+        <div>
+          <h2 class="section-title">Выбери, куда хочется</h2>
+          <p class="section-subtitle">Можно отметить сразу несколько вариантов — будет запасной план</p>
+        </div>
+      </div>
+
+      <div class="filter-tabs" id="categoryTabs" role="tablist">
+        <button type="button" class="tab-btn is-active" data-filter="all">Всё сразу</button>
+        <button type="button" class="tab-btn" data-filter="food">🍷 Поесть</button>
+        <button type="button" class="tab-btn" data-filter="entertainment">🎯 Развлечения</button>
+        <button type="button" class="tab-btn" data-filter="events">🎭 Мероприятия</button>
+      </div>
+
+      <div class="places-meta">
+        <span id="placesCount">Загружаем места...</span>
+        <span id="lastUpdated" class="meta-updated"></span>
+      </div>
+
+      <div class="places-grid" id="placesGrid"></div>
+    </section>
+
+    <!-- ШАГ 3: Пожелания и отправка -->
+    <section class="screen" id="screen-3">
+      <div class="section-head">
+        <button type="button" class="btn-back" id="backToStep2">← Назад к местам</button>
+        <div>
+          <h2 class="section-title">Твои пожелания</h2>
+          <p class="section-subtitle">Проверь выбор и допиши всё, чего не хватило</p>
+        </div>
+      </div>
+
+      <div class="summary-card" id="selectedSummaryCard">
+        <h3 class="summary-title">Выбранные места (<span id="summaryCount">0</span>)</h3>
+        <div class="selected-chips" id="selectedChips"></div>
+      </div>
+
+      <form class="wishes-form" id="wishesForm">
+        <div class="form-group">
+          <label class="form-label">Когда тебе удобно?</label>
+          <div class="time-chips" id="timeChips">
+            <button type="button" class="time-chip is-active" data-time="Сегодня вечером">Сегодня вечером</button>
+            <button type="button" class="time-chip" data-time="В эту пятницу">В эту пятницу</button>
+            <button type="button" class="time-chip" data-time="На выходных">На выходных</button>
+            <button type="button" class="time-chip" data-time="На следующей неделе">На следующей неделе</button>
+          </div>
+          <input type="text" class="text-input" id="customTimeInput" placeholder="Или напиши точный день и время (необязательно)" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="wishesTextarea">
+            Чего ещё хочется? (если этого нет на сайте)
+          </label>
+          <textarea
+            id="wishesTextarea"
+            class="textarea-input"
+            rows="4"
+            placeholder="Например: хочу горячий шоколад и погулять по набережной у Кремля, или заказать роллы и посмотреть фильм..."
+          ></textarea>
+        </div>
+
+        <div class="form-error" id="formError" role="alert" hidden></div>
+
+        <button type="submit" class="btn-primary btn-submit" id="btnSubmit">
+          Отправить мой выбор 💌
+        </button>
+      </form>
+    </section>
+
+    <!-- ШАГ 4: Готово -->
+    <section class="screen" id="screen-4">
+      <div class="success-card">
+        <div class="success-icon">💌</div>
+        <h2 class="success-title">Готово! Выбор отправлен</h2>
+        <p class="success-text" id="successMessage">
+          Я уже получил твои пожелания. Скоро всё забронирую и напишу тебе!
+        </p>
+        <div class="success-preview" id="successPreview"></div>
+        <button type="button" class="btn-secondary" id="btnStartOver">Выбрать ещё что-нибудь</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Плавающая панель внизу на Шаге 2 -->
+  <div class="floating-bar" id="floatingBar" hidden>
+    <div class="floating-inner">
+      <div class="floating-info">
+        <span class="floating-count">Выбрано: <strong id="floatingCount">0</strong></span>
+        <span class="floating-hint">Можно идти дальше даже без выбора</span>
+      </div>
+      <button type="button" class="btn-primary" id="btnGoToStep3">Дальше →</button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
