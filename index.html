@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -82,7 +82,7 @@
         <button type="button" class="btn-back" id="backToStep1">← Назад</button>
         <div>
           <h2 class="section-title">Выбери, куда хочется</h2>
-          <p class="section-subtitle">Нажми на карточку, чтобы посмотреть афишу и выбрать удобную дату</p>
+          <p class="section-subtitle">Нажми на карточку, чтобы выбрать дату и посмотреть актуальные мероприятия</p>
         </div>
       </div>
 
@@ -173,7 +173,7 @@
     </div>
   </div>
 
-  <!-- Интерактивное окно заведения: мероприятия и выбор даты -->
+  <!-- Интерактивное окно заведения: выбор даты и актуальные мероприятия -->
   <div class="modal-backdrop" id="placeModal" hidden>
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть окно">×</button>
@@ -186,23 +186,23 @@
       </div>
 
       <div class="modal-section">
-        <h3 class="modal-subtitle">Что здесь есть / афиша</h3>
-        <div class="modal-events" id="modalEvents"></div>
-      </div>
-
-      <div class="modal-section">
-        <h3 class="modal-subtitle">Выбери удобную дату</h3>
+        <h3 class="modal-subtitle">1. Выбери дату</h3>
         <div class="modal-date-chips" id="modalDateChips">
-          <button type="button" class="time-chip is-active" data-modal-date="Сегодня">Сегодня</button>
-          <button type="button" class="time-chip" data-modal-date="Завтра">Завтра</button>
-          <button type="button" class="time-chip" data-modal-date="В пятницу">В пятницу</button>
-          <button type="button" class="time-chip" data-modal-date="В субботу">В субботу</button>
-          <button type="button" class="time-chip" data-modal-date="В воскресенье">В воскресенье</button>
+          <button type="button" class="time-chip is-active" data-offset="0">Сегодня</button>
+          <button type="button" class="time-chip" data-offset="1">Завтра</button>
+          <button type="button" class="time-chip" data-weekday="5">В пятницу</button>
+          <button type="button" class="time-chip" data-weekday="6">В субботу</button>
+          <button type="button" class="time-chip" data-weekday="0">В воскресенье</button>
         </div>
         <div class="modal-date-picker-row">
           <label class="modal-date-label" for="modalDateInput">Или выбери на календаре:</label>
           <input type="date" class="text-input modal-date-input" id="modalDateInput" />
         </div>
+      </div>
+
+      <div class="modal-section">
+        <h3 class="modal-subtitle" id="modalEventsHeading">2. Актуальные мероприятия на выбранную дату</h3>
+        <div class="modal-events" id="modalEvents"></div>
       </div>
 
       <div class="modal-footer">
@@ -215,7 +215,7 @@
     </div>
   </div>
 
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <script src="config.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

@@ -587,7 +587,7 @@ body.modal-open {
 .modal-event-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
   text-align: left;
   width: 100%;
   padding: 12px 14px;
@@ -600,7 +600,7 @@ body.modal-open {
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.modal-event-item:hover {
+.modal-event-item:hover:not(:disabled) {
   border-color: var(--accent);
 }
 
@@ -609,14 +609,47 @@ body.modal-open {
   background: var(--accent-soft);
 }
 
+.modal-event-item.is-sold-out,
+.modal-event-item:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.modal-event-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
 .modal-event-title {
   font-weight: 800;
   font-size: 0.96rem;
 }
 
+.modal-event-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(200, 90, 83, 0.16);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 .modal-event-sub {
   font-size: 0.84rem;
   color: var(--text-muted);
+}
+
+.modal-empty-state {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px dashed var(--border);
+  background: var(--bg-surface-soft);
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  text-align: center;
 }
 
 .modal-date-chips {
@@ -800,8 +833,8 @@ body.modal-open {
 }
 
 .btn-primary:disabled {
-  opacity: 0.65;
-  cursor: wait;
+  opacity: 0.55;
+  cursor: not-allowed;
 }
 
 .btn-submit {

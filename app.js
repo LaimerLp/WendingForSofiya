@@ -4,13 +4,13 @@
     updatedAt: "",
     currentStep: 1,
     activeFilter: "all",
-    // Map: placeId -> { eventTitle: string, dateLabel: string }
     selections: new Map(),
     selectedTime: "Сегодня вечером",
     theme: localStorage.getItem("date_theme") || "warm",
     modal: {
       placeId: null,
       eventTitle: "",
+      dateIso: "",
       dateLabel: "Сегодня"
     }
   };
@@ -20,6 +20,33 @@
     entertainment: "🎯 Развлечения и кино",
     events: "🎭 Мероприятия"
   };
+
+  function toIsoDate(date) {
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, "0");
+    const d = String(date.getDate()).padStart(2, "0");
+    return `${y}-${m}-${d}`;
+  }
+
+  function formatRuDate(isoDate) {
+    if (!isoDate) return "";
+    const parts = isoDate.split("-");
+    if (parts.length !== 3) return isoDate;
+    return `${parts[2]}.${parts[1]}.${parts[0]}`;
+  }
+
+  function getIsoFromOffset(offsetDays) {
+    const d = new Date();
+    d.setDate(d.getDate() + offsetDays);
+    return toIsoDate(d);
+  }
+
+  function getIsoForNextWeekday(targetDay) {
+    const d = new Date();
+    const diff = (targetDay - d.getDay() + 7) % 7;
+    d.setDate(d.getDate() + diff);
+    return toIsoDate(d);
+  }
 
   function applyTheme(theme) {
     state.theme = theme;
@@ -156,19 +183,103 @@
     document.getElementById("floatingCount").textContent = state.selections.size;
   }
 
-  // Интерактивное модальное окно заведения
+  // Проверка актуальности события на выбранную дату YYYY-MM-DD
+  function isEventOnDate(ev, isoDate) {
+    if (!ev.dates || ev.dates.length === 0 || ev.dates.includes("daily")) {
+      return true;
+    }
+    return ev.dates.includes(isoDate);
+  }
+
+  function isEventAvailable(ev) {
+    if (ev.sold_out === true) return false;
+    if (typeof ev.seats_left === "number" && ev.seats_left <= 0) return false;
+    return true;
+  }
+
+  function renderModalEvents() {
+    const place = state.places.find((p) => p.id === state.modal.placeId);
+    if (!place) return;
+
+    const eventsContainer = document.getElementById("modalEvents");
+    const headingEl = document.getElementById("modalEventsHeading");
+    const confirmBtn = document.getElementById("modalConfirmBtn");
+
+    headingEl.textContent = `2. Актуальные мероприятия на ${state.modal.dateLabel} (${formatRuDate(state.modal.dateIso)})`;
+
+    const rawEvents = Array.isArray(place.events) && place.events.length > 0
+      ? place.events
+      : [{ title: "Свободное посещение", info: place.description || "Без привязки к сеансу", dates: ["daily"] }];
+
+    const eventsForDate = rawEvents.filter((ev) => isEventOnDate(ev, state.modal.dateIso));
+    const availableEvents = eventsForDate.filter((ev) => isEventAvailable(ev));
+
+    eventsContainer.innerHTML = "";
+
+    if (eventsForDate.length === 0 || availableEvents.length === 0) {
+      const reason = eventsForDate.length === 0
+        ? `На ${state.modal.dateLabel} (${formatRuDate(state.modal.dateIso)}) мероприятий нет или мест уже нет.`
+        : `На ${state.modal.dateLabel} (${formatRuDate(state.modal.dateIso)}) свободных мест уже нет.`;
+
+      eventsContainer.innerHTML = `
+        <div class="modal-empty-state">
+          😔 <strong>Мест нет</strong><br />
+          ${escapeHtml(reason)} Попробуй выбрать другую дату выше.
+        </div>
+      `;
+      state.modal.eventTitle = "";
+      confirmBtn.disabled = true;
+      confirmBtn.textContent = "Мест нет";
+      return;
+    }
+
+    // Если текущее выбранное событие недоступно на новую дату — выбираем первое доступное
+    if (!availableEvents.some((ev) => ev.title === state.modal.eventTitle)) {
+      state.modal.eventTitle = availableEvents[0].title;
+    }
+
+    const existing = state.selections.get(place.id);
+    confirmBtn.disabled = false;
+    confirmBtn.textContent = existing ? "Сохранить изменения ✓" : "Выбрать это место ♥";
+
+    eventsForDate.forEach((ev) => {
+      const available = isEventAvailable(ev);
+      const isActive = available && state.modal.eventTitle === ev.title;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `modal-event-item ${isActive ? "is-active" : ""} ${!available ? "is-sold-out" : ""}`;
+      btn.disabled = !available;
+      btn.dataset.eventTitle = ev.title;
+
+      let badgeHtml = "";
+      if (!available) {
+        badgeHtml = `<span class="modal-event-badge">Мест нет</span>`;
+      } else if (typeof ev.seats_left === "number" && ev.seats_left <= 5) {
+        badgeHtml = `<span class="modal-event-badge">Осталось мест: ${ev.seats_left}</span>`;
+      }
+
+      btn.innerHTML = `
+        <div class="modal-event-head">
+          <span class="modal-event-title">${escapeHtml(ev.title)}</span>
+          ${badgeHtml}
+        </div>
+        ${ev.info ? `<span class="modal-event-sub">${escapeHtml(ev.info)}</span>` : ""}
+      `;
+      eventsContainer.appendChild(btn);
+    });
+  }
+
   function openPlaceModal(placeId) {
     const place = state.places.find((p) => p.id === placeId);
     if (!place) return;
 
     const existing = state.selections.get(placeId);
-    const eventsList = Array.isArray(place.events) && place.events.length > 0
-      ? place.events
-      : [{ title: "Свободное посещение / по настроению", info: place.description || "Без привязки к конкретному событию" }];
+    const todayIso = getIsoFromOffset(0);
 
     state.modal.placeId = placeId;
-    state.modal.eventTitle = existing ? existing.eventTitle : eventsList[0].title;
-    state.modal.dateLabel = existing ? existing.dateLabel : "Сегодня";
+    state.modal.dateIso = existing && existing.dateIso ? existing.dateIso : todayIso;
+    state.modal.dateLabel = existing && existing.dateLabel ? existing.dateLabel : "Сегодня";
+    state.modal.eventTitle = existing ? existing.eventTitle : "";
 
     document.getElementById("modalBadge").textContent = place.subcategory || CATEGORY_LABELS[place.category] || "Место";
     document.getElementById("modalTitle").textContent = place.name;
@@ -188,33 +299,14 @@
       extLink.hidden = true;
     }
 
-    // Отрисовка мероприятий внутри модалки
-    const eventsContainer = document.getElementById("modalEvents");
-    eventsContainer.innerHTML = "";
-    eventsList.forEach((ev) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = `modal-event-item ${state.modal.eventTitle === ev.title ? "is-active" : ""}`;
-      btn.dataset.eventTitle = ev.title;
-      btn.innerHTML = `
-        <span class="modal-event-title">${escapeHtml(ev.title)}</span>
-        ${ev.info ? `<span class="modal-event-sub">${escapeHtml(ev.info)}</span>` : ""}
-      `;
-      eventsContainer.appendChild(btn);
-    });
-
-    // Синхронизация кнопок даты и календаря
     const dateInput = document.getElementById("modalDateInput");
-    dateInput.value = "";
-    const todayIso = new Date().toISOString().split("T")[0];
     dateInput.min = todayIso;
+    dateInput.value = state.modal.dateIso;
 
     syncModalDateChips();
+    renderModalEvents();
 
-    const removeBtn = document.getElementById("modalRemoveBtn");
-    removeBtn.hidden = !existing;
-    document.getElementById("modalConfirmBtn").textContent = existing ? "Сохранить изменения ✓" : "Выбрать это место ♥";
-
+    document.getElementById("modalRemoveBtn").hidden = !existing;
     document.getElementById("placeModal").hidden = false;
     document.body.classList.add("modal-open");
   }
@@ -226,19 +318,12 @@
   }
 
   function syncModalDateChips() {
-    document.querySelectorAll("#modalDateChips [data-modal-date]").forEach((chip) => {
-      chip.classList.toggle("is-active", chip.dataset.modalDate === state.modal.dateLabel);
+    document.querySelectorAll("#modalDateChips .time-chip").forEach((chip) => {
+      const chipLabel = chip.textContent.trim();
+      chip.classList.toggle("is-active", chipLabel === state.modal.dateLabel);
     });
   }
 
-  function formatRuDate(isoDate) {
-    if (!isoDate) return "";
-    const parts = isoDate.split("-");
-    if (parts.length !== 3) return isoDate;
-    return `${parts[2]}.${parts[1]}.${parts[0]}`;
-  }
-
-  // Случайный сценарий ("Удиви меня!")
   function surpriseMe() {
     state.selections.clear();
     const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -247,10 +332,16 @@
     const fun = state.places.filter((p) => p.category === "entertainment");
     const events = state.places.filter((p) => p.category === "events");
 
+    const satIso = getIsoForNextWeekday(6);
     const addRandomPlace = (place) => {
       if (!place) return;
-      const ev = Array.isArray(place.events) && place.events.length ? pickRandom(place.events).title : "";
-      state.selections.set(place.id, { eventTitle: ev, dateLabel: "На выходных" });
+      const available = (place.events || []).filter((ev) => isEventAvailable(ev));
+      const ev = available.length ? pickRandom(available).title : "";
+      state.selections.set(place.id, {
+        eventTitle: ev,
+        dateIso: satIso,
+        dateLabel: "В субботу"
+      });
     };
 
     if (food.length) addRandomPlace(pickRandom(food));
@@ -283,7 +374,8 @@
 
     selectedItems.forEach((item) => {
       const sel = state.selections.get(item.id);
-      const details = [sel.dateLabel, sel.eventTitle].filter(Boolean).join(" · ");
+      const dateStr = sel.dateIso ? `${sel.dateLabel} (${formatRuDate(sel.dateIso)})` : sel.dateLabel;
+      const details = [dateStr, sel.eventTitle].filter(Boolean).join(" · ");
       const chip = document.createElement("span");
       chip.className = "selected-chip";
       chip.innerHTML = `
@@ -311,7 +403,8 @@
         const addr = item.address ? ` (${item.address})` : "";
         lines.push(`${idx + 1}. ${item.name}${addr}`);
         if (sel.dateLabel || sel.eventTitle) {
-          const extra = [sel.dateLabel ? `Дата: ${sel.dateLabel}` : "", sel.eventTitle ? `Программа: ${sel.eventTitle}` : ""]
+          const dateStr = sel.dateIso ? `${sel.dateLabel} (${formatRuDate(sel.dateIso)})` : sel.dateLabel;
+          const extra = [dateStr ? `Дата: ${dateStr}` : "", sel.eventTitle ? `Программа: ${sel.eventTitle}` : ""]
             .filter(Boolean)
             .join(" | ");
           lines.push(`   ↳ ${extra}`);
@@ -412,14 +505,12 @@
       });
     });
 
-    // Клик по карточке или кнопке открывает модальное окно
     document.getElementById("placesGrid").addEventListener("click", (e) => {
       if (e.target.closest("a.place-link")) return;
       const card = e.target.closest("[data-card-id]");
       if (card) openPlaceModal(card.dataset.cardId);
     });
 
-    // События внутри модального окна
     document.getElementById("modalClose").addEventListener("click", closePlaceModal);
     document.getElementById("placeModal").addEventListener("click", (e) => {
       if (e.target.id === "placeModal") closePlaceModal();
@@ -427,7 +518,7 @@
 
     document.getElementById("modalEvents").addEventListener("click", (e) => {
       const item = e.target.closest("[data-event-title]");
-      if (!item) return;
+      if (!item || item.disabled) return;
       state.modal.eventTitle = item.dataset.eventTitle;
       document.querySelectorAll("#modalEvents .modal-event-item").forEach((el) => {
         el.classList.toggle("is-active", el.dataset.eventTitle === state.modal.eventTitle);
@@ -435,24 +526,35 @@
     });
 
     document.getElementById("modalDateChips").addEventListener("click", (e) => {
-      const chip = e.target.closest("[data-modal-date]");
+      const chip = e.target.closest(".time-chip");
       if (!chip) return;
-      state.modal.dateLabel = chip.dataset.modalDate;
-      document.getElementById("modalDateInput").value = "";
+
+      if (chip.dataset.offset !== undefined) {
+        state.modal.dateIso = getIsoFromOffset(Number(chip.dataset.offset));
+      } else if (chip.dataset.weekday !== undefined) {
+        state.modal.dateIso = getIsoForNextWeekday(Number(chip.dataset.weekday));
+      }
+
+      state.modal.dateLabel = chip.textContent.trim();
+      document.getElementById("modalDateInput").value = state.modal.dateIso;
       syncModalDateChips();
+      renderModalEvents();
     });
 
     document.getElementById("modalDateInput").addEventListener("change", (e) => {
       if (e.target.value) {
+        state.modal.dateIso = e.target.value;
         state.modal.dateLabel = formatRuDate(e.target.value);
         syncModalDateChips();
+        renderModalEvents();
       }
     });
 
     document.getElementById("modalConfirmBtn").addEventListener("click", () => {
-      if (state.modal.placeId) {
+      if (state.modal.placeId && state.modal.eventTitle) {
         state.selections.set(state.modal.placeId, {
           eventTitle: state.modal.eventTitle,
+          dateIso: state.modal.dateIso,
           dateLabel: state.modal.dateLabel
         });
       }
