@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "19.11.2026 17:38 МСК",
+  "updated_at": "20.11.2026 18:02 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -467,6 +467,380 @@
           "dates": [
             "2026-12-10"
           ]
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-4bc3a70d",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Концерт",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/koncert",
+      "events": [
+        {
+          "title": "Концерт",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-fc4072fd",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Новый год",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/new-year",
+      "events": [
+        {
+          "title": "Новый год",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-21e338f2",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Бонусы",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/bonus",
+      "events": [
+        {
+          "title": "Бонусы",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-6a009076",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Экскурсии",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/excursions",
+      "events": [
+        {
+          "title": "Экскурсии",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-4b85473c",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Образование",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/education",
+      "events": [
+        {
+          "title": "Образование",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-20b1a0d4",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Стендап",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/stand-up",
+      "events": [
+        {
+          "title": "Стендап",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-9dd0f217",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Выставки",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/vystavka",
+      "events": [
+        {
+          "title": "Выставки",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-ec4f43fd",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Подробнее 6+ 650 - 650 ₽",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/v-gostiax-u-doma-remesel",
+      "events": [
+        {
+          "title": "Подробнее 6+ 650 - 650 ₽",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-4a153642",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "В гостях у Дома ремёсел",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/v-gostiax-u-doma-remesel",
+      "events": [
+        {
+          "title": "В гостях у Дома ремёсел",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-60ddc6d9",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Подробнее 6+ 1500 - 1500 ₽",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/keramika-master-klass",
+      "events": [
+        {
+          "title": "Подробнее 6+ 1500 - 1500 ₽",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-b39b8ae4",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Керамика. Мастер-класс",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/keramika-master-klass",
+      "events": [
+        {
+          "title": "Керамика. Мастер-класс",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-8f0bd8c2",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Подробнее 6+ 200 - 200 ₽",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/volsebnik-planetarii",
+      "events": [
+        {
+          "title": "Подробнее 6+ 200 - 200 ₽",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-66fde35f",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Сборный стендап Сборный стендап Концерт псковских стендап комиков Псков, Россия 20 нояб 20:00 пт Blgkv Bar Билеты от 600 ₽",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/koncert_pskovskogo_stendap_kluba/id127058",
+      "events": [
+        {
+          "title": "Сборный стендап Сборный стендап Концерт псковских стендап комиков Псков, Россия 20 нояб 20:00 пт Blgkv Bar Билеты от 600 ₽",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-3c7bd64e",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Сборный стендап Сборный стендап Стендап концерт комиков Пскова Псков, Россия 26 нояб 20:00 чт Blgkv Bar Билеты от 500 ₽",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/koncert_pskovskogo_stendap_kluba/id127450",
+      "events": [
+        {
+          "title": "Сборный стендап Сборный стендап Стендап концерт комиков Пскова Псков, Россия 26 нояб 20:00 чт Blgkv Bar Билеты от 500 ₽",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-479d53fa",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Сольный стендап Сольный стендап Илгар Шарифов: стендап Псков, Россия 27 нояб 20:00 пт Blgkv Bar Билеты от 69 ₽",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/ilgar_sharifov_stendap",
+      "events": [
+        {
+          "title": "Сольный стендап Сольный стендап Илгар Шарифов: стендап Псков, Россия 27 нояб 20:00 пт Blgkv Bar Билеты от 69 ₽",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-4773db52",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Сольный стендап Сольный стендап Виталий Веснер: стендап-концерт Псков, Россия 5 дек 20:00 сб Blgkv Bar Билеты от 600 ₽",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/vitaliy_vesner_stendap/id127351",
+      "events": [
+        {
+          "title": "Сольный стендап Сольный стендап Виталий Веснер: стендап-концерт Псков, Россия 5 дек 20:00 сб Blgkv Bar Билеты от 600 ₽",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-70464c0d",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Архив событий",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/history",
+      "events": [
+        {
+          "title": "Архив событий",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-9a0de83e",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Мероприятия",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/",
+      "events": [
+        {
+          "title": "Мероприятия",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-e5707924",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Мастер-классы",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/master-klass/?interval=future",
+      "events": [
+        {
+          "title": "Мастер-классы",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-6abdd538",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Интерактивные экскурсии",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/interaktiv/?interval=future",
+      "events": [
+        {
+          "title": "Интерактивные экскурсии",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-5a7d592a",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Концерты",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/kontserty/?interval=future",
+      "events": [
+        {
+          "title": "Концерты",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-8227992f",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Спектакли",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/spektakli/?interval=future",
+      "events": [
+        {
+          "title": "Спектакли",
+          "info": "Творческий мастер-класс в Пскове"
         }
       ]
     }
