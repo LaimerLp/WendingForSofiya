@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "20.11.2026 18:02 МСК",
+  "updated_at": "21.11.2026 17:24 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -666,28 +666,11 @@
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/volsebnik-planetarii",
+      "url": "https://pskov.afishagoroda.ru/events/progulka-s-orionycem",
       "events": [
         {
           "title": "Подробнее 6+ 200 - 200 ₽",
           "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
-      "id": "ev-su-66fde35f",
-      "category": "events",
-      "subcategory": "Стендап",
-      "name": "Сборный стендап Сборный стендап Концерт псковских стендап комиков Псков, Россия 20 нояб 20:00 пт Blgkv Bar Билеты от 600 ₽",
-      "description": "Стендап-выступление в Пскове.",
-      "address": "Псков",
-      "rating": "",
-      "price": "По билетам",
-      "url": "https://gostandup.ru/pskov/events/koncert_pskovskogo_stendap_kluba/id127058",
-      "events": [
-        {
-          "title": "Сборный стендап Сборный стендап Концерт псковских стендап комиков Псков, Россия 20 нояб 20:00 пт Blgkv Bar Билеты от 600 ₽",
-          "info": "Стендап-шоу в Пскове"
         }
       ]
     },
