@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "21.11.2026 17:24 МСК",
+  "updated_at": "22.11.2026 17:16 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -556,23 +556,6 @@
       ]
     },
     {
-      "id": "ev-ag-20b1a0d4",
-      "category": "events",
-      "subcategory": "Афиша Пскова",
-      "name": "Стендап",
-      "description": "Актуальное мероприятие из городской афиши Пскова.",
-      "address": "Псков (площадка указана на странице события)",
-      "rating": "",
-      "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/stand-up",
-      "events": [
-        {
-          "title": "Стендап",
-          "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
       "id": "ev-ag-9dd0f217",
       "category": "events",
       "subcategory": "Афиша Пскова",
@@ -658,18 +641,35 @@
       ]
     },
     {
-      "id": "ev-ag-8f0bd8c2",
+      "id": "ev-ag-338b75ad",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 6+ 200 - 200 ₽",
+      "name": "Подробнее 0+ 250 ₽",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/progulka-s-orionycem",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-neveroyatnye-priklyucheniya-golubya-petra-2024",
       "events": [
         {
-          "title": "Подробнее 6+ 200 - 200 ₽",
+          "title": "Подробнее 0+ 250 ₽",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-f74fe74e",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Спектакль «Невероятные приключения голубя Петра»",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-neveroyatnye-priklyucheniya-golubya-petra-2024",
+      "events": [
+        {
+          "title": "Спектакль «Невероятные приключения голубя Петра»",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
@@ -806,23 +806,6 @@
       "events": [
         {
           "title": "Концерты",
-          "info": "Творческий мастер-класс в Пскове"
-        }
-      ]
-    },
-    {
-      "id": "ev-mk-8227992f",
-      "category": "events",
-      "subcategory": "Мастер-класс",
-      "name": "Спектакли",
-      "description": "Мастер-класс или творческая встреча в Пскове.",
-      "address": "Псков (Центр туризма и творческих индустрий)",
-      "rating": "",
-      "price": "По записи",
-      "url": "https://ticpskov.ru/events/spektakli/?interval=future",
-      "events": [
-        {
-          "title": "Спектакли",
           "info": "Творческий мастер-класс в Пскове"
         }
       ]
