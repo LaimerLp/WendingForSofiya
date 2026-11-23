@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "22.11.2026 17:16 МСК",
+  "updated_at": "23.11.2026 20:38 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -641,35 +641,35 @@
       ]
     },
     {
-      "id": "ev-ag-338b75ad",
+      "id": "ev-ag-f3e3e845",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 0+ 250 ₽",
+      "name": "Подробнее 0+ 5750 - 6750 ₽",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/spektakl-neveroyatnye-priklyucheniya-golubya-petra-2024",
+      "url": "https://pskov.afishagoroda.ru/events/istoriia-pskovskogo-kremlia",
       "events": [
         {
-          "title": "Подробнее 0+ 250 ₽",
+          "title": "Подробнее 0+ 5750 - 6750 ₽",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-f74fe74e",
+      "id": "ev-ag-8cc00c49",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Спектакль «Невероятные приключения голубя Петра»",
+      "name": "История Псковского Кремля",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/spektakl-neveroyatnye-priklyucheniya-golubya-petra-2024",
+      "url": "https://pskov.afishagoroda.ru/events/istoriia-pskovskogo-kremlia",
       "events": [
         {
-          "title": "Спектакль «Невероятные приключения голубя Петра»",
+          "title": "История Псковского Кремля",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
