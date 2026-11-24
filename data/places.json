@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "23.11.2026 20:38 МСК",
+  "updated_at": "24.11.2026 20:09 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -641,35 +641,35 @@
       ]
     },
     {
-      "id": "ev-ag-f3e3e845",
+      "id": "ev-ag-8f0bd8c2",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 0+ 5750 - 6750 ₽",
+      "name": "Подробнее 6+ 200 - 200 ₽",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/istoriia-pskovskogo-kremlia",
+      "url": "https://pskov.afishagoroda.ru/events/istoriia-odnogo-kosmiceskogo-putesestviia",
       "events": [
         {
-          "title": "Подробнее 0+ 5750 - 6750 ₽",
+          "title": "Подробнее 6+ 200 - 200 ₽",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-8cc00c49",
+      "id": "ev-ag-72dfffd1",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "История Псковского Кремля",
+      "name": "История одного космического путешествия",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/istoriia-pskovskogo-kremlia",
+      "url": "https://pskov.afishagoroda.ru/events/istoriia-odnogo-kosmiceskogo-putesestviia",
       "events": [
         {
-          "title": "История Псковского Кремля",
+          "title": "История одного космического путешествия",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
@@ -806,6 +806,23 @@
       "events": [
         {
           "title": "Концерты",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-8227992f",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Спектакли",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/spektakli/?interval=future",
+      "events": [
+        {
+          "title": "Спектакли",
           "info": "Творческий мастер-класс в Пскове"
         }
       ]
