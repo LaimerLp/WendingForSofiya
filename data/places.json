@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "24.11.2026 20:09 МСК",
+  "updated_at": "25.11.2026 19:55 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -471,10 +471,10 @@
       ]
     },
     {
-      "id": "ev-ag-4bc3a70d",
+      "id": "ev-ag-5a7d592a",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Концерт",
+      "name": "Концерты",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
@@ -482,7 +482,7 @@
       "url": "https://pskov.afishagoroda.ru/events/koncert",
       "events": [
         {
-          "title": "Концерт",
+          "title": "Концерты",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
@@ -505,171 +505,171 @@
       ]
     },
     {
-      "id": "ev-ag-21e338f2",
+      "id": "ev-ag-b2424f8e",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Бонусы",
+      "name": "Спектакль «Свидетельские показания»",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/bonus",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-svidetelskie-pokazaniya-2025",
       "events": [
         {
-          "title": "Бонусы",
+          "title": "Спектакль «Свидетельские показания»",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-6a009076",
+      "id": "ev-ag-4ef5697f",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Экскурсии",
+      "name": "Луна: загадки и тайны",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/excursions",
+      "url": "https://pskov.afishagoroda.ru/events/luna-zagadki-i-tainy",
       "events": [
         {
-          "title": "Экскурсии",
+          "title": "Луна: загадки и тайны",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-4b85473c",
+      "id": "ev-ag-25aa33b8",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Образование",
+      "name": "Спектакль «Морфий»",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/education",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-morfij-2025",
       "events": [
         {
-          "title": "Образование",
+          "title": "Спектакль «Морфий»",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-9dd0f217",
+      "id": "ev-ag-797fcdf3",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Выставки",
+      "name": "Маша Распутина, Великие Луки",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/vystavka",
+      "url": "https://pskov.afishagoroda.ru/events/masha-rasputina-velikie-luki-2026",
       "events": [
         {
-          "title": "Выставки",
+          "title": "Маша Распутина, Великие Луки",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-ec4f43fd",
+      "id": "ev-ag-7bf88d54",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 6+ 650 - 650 ₽",
+      "name": "Рассказы Гнома-Астронома",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/v-gostiax-u-doma-remesel",
+      "url": "https://pskov.afishagoroda.ru/events/rasskazy-gnoma-astronoma",
       "events": [
         {
-          "title": "Подробнее 6+ 650 - 650 ₽",
+          "title": "Рассказы Гнома-Астронома",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-4a153642",
+      "id": "ev-ag-537f4717",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "В гостях у Дома ремёсел",
+      "name": "Ivan Zolo, Великие Луки",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/v-gostiax-u-doma-remesel",
+      "url": "https://pskov.afishagoroda.ru/events/ivan-zolo-velikie-luki-2026",
       "events": [
         {
-          "title": "В гостях у Дома ремёсел",
+          "title": "Ivan Zolo, Великие Луки",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-60ddc6d9",
+      "id": "ev-ag-985da808",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 6+ 1500 - 1500 ₽",
+      "name": "Спектакль «Где-то на белом свете. Первая серия»",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/keramika-master-klass",
+      "url": "https://pskov.afishagoroda.ru/events/gde-to-na-belom-svete-pervaia-seriia-2026",
       "events": [
         {
-          "title": "Подробнее 6+ 1500 - 1500 ₽",
+          "title": "Спектакль «Где-то на белом свете. Первая серия»",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-b39b8ae4",
+      "id": "ev-ag-23b8dc2d",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Керамика. Мастер-класс",
+      "name": "Спектакль «Любовнички-2»",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/keramika-master-klass",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-lyubovnichki-2-2026",
       "events": [
         {
-          "title": "Керамика. Мастер-класс",
+          "title": "Спектакль «Любовнички-2»",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-8f0bd8c2",
+      "id": "ev-ag-74d90887",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "Подробнее 6+ 200 - 200 ₽",
+      "name": "Валерий Сёмин, Великие Луки",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/istoriia-odnogo-kosmiceskogo-putesestviia",
+      "url": "https://pskov.afishagoroda.ru/events/valerij-syomin-velikie-luki-2026",
       "events": [
         {
-          "title": "Подробнее 6+ 200 - 200 ₽",
+          "title": "Валерий Сёмин, Великие Луки",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
     {
-      "id": "ev-ag-72dfffd1",
+      "id": "ev-ag-ab368dce",
       "category": "events",
       "subcategory": "Афиша Пскова",
-      "name": "История одного космического путешествия",
+      "name": "Ivan Zolo",
       "description": "Актуальное мероприятие из городской афиши Пскова.",
       "address": "Псков (площадка указана на странице события)",
       "rating": "",
       "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/istoriia-odnogo-kosmiceskogo-putesestviia",
+      "url": "https://pskov.afishagoroda.ru/events/ivan-zolo-2026",
       "events": [
         {
-          "title": "История одного космического путешествия",
+          "title": "Ivan Zolo",
           "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
@@ -794,18 +794,18 @@
       ]
     },
     {
-      "id": "ev-mk-5a7d592a",
+      "id": "ev-mk-6a009076",
       "category": "events",
       "subcategory": "Мастер-класс",
-      "name": "Концерты",
+      "name": "Экскурсии",
       "description": "Мастер-класс или творческая встреча в Пскове.",
       "address": "Псков (Центр туризма и творческих индустрий)",
       "rating": "",
       "price": "По записи",
-      "url": "https://ticpskov.ru/events/kontserty/?interval=future",
+      "url": "https://ticpskov.ru/events/ekskursii/?interval=future",
       "events": [
         {
-          "title": "Концерты",
+          "title": "Экскурсии",
           "info": "Творческий мастер-класс в Пскове"
         }
       ]
