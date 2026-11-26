@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "25.11.2026 19:55 МСК",
+  "updated_at": "26.11.2026 19:34 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -505,23 +505,6 @@
       ]
     },
     {
-      "id": "ev-ag-b2424f8e",
-      "category": "events",
-      "subcategory": "Афиша Пскова",
-      "name": "Спектакль «Свидетельские показания»",
-      "description": "Актуальное мероприятие из городской афиши Пскова.",
-      "address": "Псков (площадка указана на странице события)",
-      "rating": "",
-      "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/spektakl-svidetelskie-pokazaniya-2025",
-      "events": [
-        {
-          "title": "Спектакль «Свидетельские показания»",
-          "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
       "id": "ev-ag-4ef5697f",
       "category": "events",
       "subcategory": "Афиша Пскова",
@@ -675,6 +658,23 @@
       ]
     },
     {
+      "id": "ev-ag-d40321ee",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "ПоПойКа",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/popoika",
+      "events": [
+        {
+          "title": "ПоПойКа",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
       "id": "ev-su-3c7bd64e",
       "category": "events",
       "subcategory": "Стендап",
@@ -777,23 +777,6 @@
       ]
     },
     {
-      "id": "ev-mk-6abdd538",
-      "category": "events",
-      "subcategory": "Мастер-класс",
-      "name": "Интерактивные экскурсии",
-      "description": "Мастер-класс или творческая встреча в Пскове.",
-      "address": "Псков (Центр туризма и творческих индустрий)",
-      "rating": "",
-      "price": "По записи",
-      "url": "https://ticpskov.ru/events/interaktiv/?interval=future",
-      "events": [
-        {
-          "title": "Интерактивные экскурсии",
-          "info": "Творческий мастер-класс в Пскове"
-        }
-      ]
-    },
-    {
       "id": "ev-mk-6a009076",
       "category": "events",
       "subcategory": "Мастер-класс",
@@ -811,18 +794,35 @@
       ]
     },
     {
-      "id": "ev-mk-8227992f",
+      "id": "ev-mk-6abdd538",
       "category": "events",
       "subcategory": "Мастер-класс",
-      "name": "Спектакли",
+      "name": "Интерактивные экскурсии",
       "description": "Мастер-класс или творческая встреча в Пскове.",
       "address": "Псков (Центр туризма и творческих индустрий)",
       "rating": "",
       "price": "По записи",
-      "url": "https://ticpskov.ru/events/spektakli/?interval=future",
+      "url": "https://ticpskov.ru/events/interaktiv/?interval=future",
       "events": [
         {
-          "title": "Спектакли",
+          "title": "Интерактивные экскурсии",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-9dd0f217",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Выставки",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/vystavki/?interval=future",
+      "events": [
+        {
+          "title": "Выставки",
           "info": "Творческий мастер-класс в Пскове"
         }
       ]
