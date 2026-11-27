@@ -1,6 +1,6 @@
 {
   "city": "Псков",
-  "updated_at": "26.11.2026 19:34 МСК",
+  "updated_at": "27.11.2026 19:20 МСК",
   "items": [
     {
       "id": "food-helga",
@@ -505,57 +505,6 @@
       ]
     },
     {
-      "id": "ev-ag-4ef5697f",
-      "category": "events",
-      "subcategory": "Афиша Пскова",
-      "name": "Луна: загадки и тайны",
-      "description": "Актуальное мероприятие из городской афиши Пскова.",
-      "address": "Псков (площадка указана на странице события)",
-      "rating": "",
-      "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/luna-zagadki-i-tainy",
-      "events": [
-        {
-          "title": "Луна: загадки и тайны",
-          "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
-      "id": "ev-ag-25aa33b8",
-      "category": "events",
-      "subcategory": "Афиша Пскова",
-      "name": "Спектакль «Морфий»",
-      "description": "Актуальное мероприятие из городской афиши Пскова.",
-      "address": "Псков (площадка указана на странице события)",
-      "rating": "",
-      "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/spektakl-morfij-2025",
-      "events": [
-        {
-          "title": "Спектакль «Морфий»",
-          "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
-      "id": "ev-ag-797fcdf3",
-      "category": "events",
-      "subcategory": "Афиша Пскова",
-      "name": "Маша Распутина, Великие Луки",
-      "description": "Актуальное мероприятие из городской афиши Пскова.",
-      "address": "Псков (площадка указана на странице события)",
-      "rating": "",
-      "price": "Билеты на сайте",
-      "url": "https://pskov.afishagoroda.ru/events/masha-rasputina-velikie-luki-2026",
-      "events": [
-        {
-          "title": "Маша Распутина, Великие Луки",
-          "info": "Актуальное событие из городской афиши Пскова"
-        }
-      ]
-    },
-    {
       "id": "ev-ag-7bf88d54",
       "category": "events",
       "subcategory": "Афиша Пскова",
@@ -675,19 +624,53 @@
       ]
     },
     {
-      "id": "ev-su-3c7bd64e",
+      "id": "ev-ag-67dc99bc",
       "category": "events",
-      "subcategory": "Стендап",
-      "name": "Сборный стендап Сборный стендап Стендап концерт комиков Пскова Псков, Россия 26 нояб 20:00 чт Blgkv Bar Билеты от 500 ₽",
-      "description": "Стендап-выступление в Пскове.",
-      "address": "Псков",
+      "subcategory": "Афиша Пскова",
+      "name": "Спектакль «Гробница малыша Тутанхамона»",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
       "rating": "",
-      "price": "По билетам",
-      "url": "https://gostandup.ru/pskov/events/koncert_pskovskogo_stendap_kluba/id127450",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/spektakl-grobnica-malysha-tutanhamona-2025",
       "events": [
         {
-          "title": "Сборный стендап Сборный стендап Стендап концерт комиков Пскова Псков, Россия 26 нояб 20:00 чт Blgkv Bar Билеты от 500 ₽",
-          "info": "Стендап-шоу в Пскове"
+          "title": "Спектакль «Гробница малыша Тутанхамона»",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-04429658",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Воскресный караоке-вечер",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/voskresnyi-karaoke-vecer",
+      "events": [
+        {
+          "title": "Воскресный караоке-вечер",
+          "info": "Актуальное событие из городской афиши Пскова"
+        }
+      ]
+    },
+    {
+      "id": "ev-ag-66f7b778",
+      "category": "events",
+      "subcategory": "Афиша Пскова",
+      "name": "Пенный безлимит",
+      "description": "Актуальное мероприятие из городской афиши Пскова.",
+      "address": "Псков (площадка указана на странице события)",
+      "rating": "",
+      "price": "Билеты на сайте",
+      "url": "https://pskov.afishagoroda.ru/events/pennyi-bezlimit",
+      "events": [
+        {
+          "title": "Пенный безлимит",
+          "info": "Актуальное событие из городской афиши Пскова"
         }
       ]
     },
@@ -704,6 +687,23 @@
       "events": [
         {
           "title": "Сольный стендап Сольный стендап Илгар Шарифов: стендап Псков, Россия 27 нояб 20:00 пт Blgkv Bar Билеты от 69 ₽",
+          "info": "Стендап-шоу в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-su-b14d4e70",
+      "category": "events",
+      "subcategory": "Стендап",
+      "name": "Открытый микрофон Открытый микрофон Открытый Микрофон Псков, Россия 3 дек 20:00 чт Blgkv Bar Билеты от 222 ₽",
+      "description": "Стендап-выступление в Пскове.",
+      "address": "Псков",
+      "rating": "",
+      "price": "По билетам",
+      "url": "https://gostandup.ru/pskov/events/otkrytyy_mikrofon_v_pskove/id128202",
+      "events": [
+        {
+          "title": "Открытый микрофон Открытый микрофон Открытый Микрофон Псков, Россия 3 дек 20:00 чт Blgkv Bar Билеты от 222 ₽",
           "info": "Стендап-шоу в Пскове"
         }
       ]
@@ -777,23 +777,6 @@
       ]
     },
     {
-      "id": "ev-mk-6a009076",
-      "category": "events",
-      "subcategory": "Мастер-класс",
-      "name": "Экскурсии",
-      "description": "Мастер-класс или творческая встреча в Пскове.",
-      "address": "Псков (Центр туризма и творческих индустрий)",
-      "rating": "",
-      "price": "По записи",
-      "url": "https://ticpskov.ru/events/ekskursii/?interval=future",
-      "events": [
-        {
-          "title": "Экскурсии",
-          "info": "Творческий мастер-класс в Пскове"
-        }
-      ]
-    },
-    {
       "id": "ev-mk-6abdd538",
       "category": "events",
       "subcategory": "Мастер-класс",
@@ -806,6 +789,23 @@
       "events": [
         {
           "title": "Интерактивные экскурсии",
+          "info": "Творческий мастер-класс в Пскове"
+        }
+      ]
+    },
+    {
+      "id": "ev-mk-6a009076",
+      "category": "events",
+      "subcategory": "Мастер-класс",
+      "name": "Экскурсии",
+      "description": "Мастер-класс или творческая встреча в Пскове.",
+      "address": "Псков (Центр туризма и творческих индустрий)",
+      "rating": "",
+      "price": "По записи",
+      "url": "https://ticpskov.ru/events/ekskursii/?interval=future",
+      "events": [
+        {
+          "title": "Экскурсии",
           "info": "Творческий мастер-класс в Пскове"
         }
       ]
